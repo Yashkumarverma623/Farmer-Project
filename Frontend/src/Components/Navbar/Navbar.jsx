@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaHome, FaUsers, FaSignInAlt, FaExclamationTriangle, FaBars, FaTimes, FaUserCircle,  FaHeartbeat, FaBook, FaBlog, FaRegCommentDots, FaInfoCircle } from "react-icons/fa";
+import { Link,  } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [userDetails, setUserDetails] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const storedUser = sessionStorage.getItem("user");
@@ -31,7 +30,7 @@ const Navbar = () => {
   function handleLogout() {
     sessionStorage.removeItem("user");
     setUserDetails(null);
-    navigate("/Login_Signup");
+
   }
 
   return (
