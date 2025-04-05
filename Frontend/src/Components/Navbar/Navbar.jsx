@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link,  } from "react-router-dom";
+import { FaHome, FaUsers, FaSignInAlt, FaExclamationTriangle, FaBars, FaTimes, FaUserCircle,  FaHeartbeat, FaBook, FaBlog, FaRegCommentDots, FaInfoCircle } from "react-icons/fa";
 
 
 const Navbar = () => {
